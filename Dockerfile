@@ -1,4 +1,4 @@
-FROM alpine
+FROM balenalib/raspberrypi3-alpine-node
 
 # install required libs, docker-compose and yarn
 RUN apk update && apk add --no-cache libstdc++ libgcc py-pip yarn && pip install docker-compose
